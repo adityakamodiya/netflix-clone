@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .div2{
+            display: none;
+        }
+        .div1{
+            border: 1px solid;
+        }
+    </style>
+    <div class="div1">see lorem!!!</div>
+    <div class="div2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo officiis voluptate saepe sequi fugiat excepturi ab perspiciatis quas, voluptates est exercitationem dicta ad molestias ut. Impedit inventore optio delectus fugit!
+    </div>
+    <p></p>
+    <script>
+        let div1 = document.querySelector(".div1")
+        let div2 = document.querySelector(".div2")
+        div1.onclick = () =>
+        {
+            div2.style.display = "flex"
+        }
+        let para = document.querySelector('p')
+        let names = ['ram','shyam','mohan','sohan']
+        names.reverse('').forEach(myfunc)
+        function myfunc(item,index)
+        {
+            para.innerHTML += item + '<br>'
+        }
+        console.log(a)
+        var a = 10
+    </script>
+</body>
+</html>
